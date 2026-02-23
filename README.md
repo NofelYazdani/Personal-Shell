@@ -186,15 +186,3 @@ personal_shell/
 - This is an educational shell project and does not aim to be POSIX-complete.
 
 ---
-
-## Why this project is useful
-
-This codebase is a practical reference for learning shell fundamentals in C:
-
-- process creation (`fork`, `execvp`, `wait`)
-- redirection through pipes (`pipe`, `dup2`)
-- job control basics
-- signal handling (`sigaction`)
-- socket programming (`socket`, `bind`, `listen`, `accept`, `connect`)
-
-If you're studying systems programming, this project gives you a compact end-to-end shell implementation to explore and extend.
