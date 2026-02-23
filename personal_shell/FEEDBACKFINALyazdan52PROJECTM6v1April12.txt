@@ -1,0 +1,260 @@
+12-April-2022 10:36:48---Student: you
+12-April-2022 10:36:48----Code compiles Trying New Makefile instead
+12-April-2022 10:36:48----Code compilesPASS
+Launch Suite:
+  12-April-2022 10:36:53----Process exits shell with correct return code:OK
+  12-April-2022 10:36:53----Shell message is displayed:OK
+Result:PASS
+Unknown Command Message:
+  12-April-2022 10:36:54----Unknown command should display corresponding message:OK
+  12-April-2022 10:36:54----Multiple unknown commands:OK
+Result:PASS
+Long Command Message:
+  12-April-2022 10:36:54----Long command input is invalid:OK
+  12-April-2022 10:36:55----Long command message takes priority:OK
+Result:PASS
+Echo Simple Messages:
+  12-April-2022 10:36:55----Echo of one character displays correctly:OK
+  12-April-2022 10:36:55----Echo of simple message displays correctly:OK
+  12-April-2022 10:36:55----Echo of simple message displays correctly v3:OK
+  12-April-2022 10:36:56----Echo of simple message displays correctly v3:OK
+  12-April-2022 10:36:56----Echo of simple message does not show errors:OK
+Result:PASS
+Echo Special Characters:
+  12-April-2022 10:36:57----Echo of mixed message displays correctly:OK
+  12-April-2022 10:36:57----echo with quotes has no special meaning:OK
+  12-April-2022 10:36:57----echo ignores extra spaces:OK
+Result:PASS
+Multiple Commands:
+  12-April-2022 10:36:58----Two echo commands display correctly:OK
+  12-April-2022 10:36:58----Two echo commands do not show error:OK
+  12-April-2022 10:36:59----Echo commands work while other commands error:OK
+Result:PASS
+Hidden - echo near limits:
+  12-April-2022 10:36:59----Echo command with 62 characters is displayed correctly:OK
+  12-April-2022 10:36:59----Echo command with 67 characters triggers an error message:OK
+  12-April-2022 10:37:00----Echo with 58 spaces then character:OK
+Result:PASS
+Hidden - echo does not display an extra space:
+  12-April-2022 10:37:00----Echo command does not add an extra space:OK
+  12-April-2022 10:37:00----Echo of one character displays correctly v2:OK
+Result:PASS
+Hidden - echo with random messages:
+  12-April-2022 10:37:00----echo with a random message displays correctly:OK
+Result:PASS
+Simple variables accesses:
+  12-April-2022 10:37:05----Declare and access a single variable:OK
+  12-April-2022 10:37:05----Declare and access a single variable:OK
+Result:PASS
+Variable integration with other commands:
+  12-April-2022 10:37:06----Declare a single variable:OK
+  12-April-2022 10:37:06----Declare and access two variables:OK
+Result:PASS
+Custom variable accesses:
+  12-April-2022 10:37:06----Access variables in separate lines:OK
+  12-April-2022 10:37:07----Access variables in separate lines v2:OK
+Result:PASS
+Echo without variables displays plain text:
+  12-April-2022 10:37:07----Variables access with $ is bound to name:OK
+  12-April-2022 10:37:07----Non-existing variable displays as plain text:OK
+Result:PASS
+Variable values can be redefined:
+  12-April-2022 10:37:07----Variable value is redefined appropriately:OK
+  12-April-2022 10:37:08----Variable value is redefined appropriately v2:OK
+Result:PASS
+Variable formatting edge cases:
+  12-April-2022 10:37:08----Variable declaration with spaces is not supported:OK
+Result:PASS
+Advanced tests:
+  12-April-2022 10:37:08----Declare and access 100 variables:OK
+Result:PASS
+Hidden - Variable Error Handling:
+  12-April-2022 10:37:10----Long variable declaration is prohibited:OK
+Result:PASS
+Hidden - Large Redefine:
+  12-April-2022 10:37:11----Declare, redefine and access 100 variables:OK
+Result:PASS
+Hidden - Variables are aaaa and aaaaa:
+  12-April-2022 10:37:14----All variables have the same letters but different length 1:OK
+  12-April-2022 10:37:14----All variables have the same letters but different length 2:OK
+Result:PASS
+correct cat argument setup:
+  12-April-2022 10:37:19----Cat on a file that contains one word:OK
+  12-April-2022 10:37:19----cat without a file reports an error:NOT OK
+Result:FAIL
+cat correctly reads sample files:
+  12-April-2022 10:37:23----Cat on a file that contains multiple words:OK
+  12-April-2022 10:37:24----Cat on a file that contains multiple lines:OK
+Result:PASS
+correct wc argument setup:
+  12-April-2022 10:37:24----wc on an empty file:OK
+  12-April-2022 10:37:24----wc without a filename reports an error:NOT OK
+Result:FAIL
+wc reports correct counts on sample files:
+  12-April-2022 10:37:28----wc on a file that contains mutliple lines:OK
+  12-April-2022 10:37:29----wc on a file that contains mutliple words in a line:OK
+  12-April-2022 10:37:29----wc on a file that contains blank lines:OK
+Result:PASS
+Sample ls runs:
+  12-April-2022 10:37:29----Create a single sub-directory with a single file:OK
+  12-April-2022 10:37:29----Create a single sub-directory with multiple files:OK
+  12-April-2022 10:37:30----ls a directory:OK
+Result:PASS
+Sample cd runs:
+  12-April-2022 10:37:30----cd into a directory and display the files:OK
+  12-April-2022 10:37:30----cd into a nested directory and display the files:OK
+Result:PASS
+ls error handling:
+  12-April-2022 10:37:30----ls on an invalid path reports an error:OK
+Result:PASS
+ls handles edge cases correctly:
+  12-April-2022 10:37:31----ls a single file through a variable identifier:OK
+  12-April-2022 10:37:31----Create a single sub-directory, and ls into that directory:OK
+Result:PASS
+ls filters files correctly:
+  12-April-2022 10:37:31----ls correctly filters files:OK
+  12-April-2022 10:37:31----ls correctly filters files v2:OK
+Result:PASS
+Recursive ls displays files correctly:
+  12-April-2022 10:37:32----Recursive ls with depth 1 does not capture inner files:OK
+  12-April-2022 10:37:32----Recursive ls with depth 2 captures inner files:OK
+  12-April-2022 10:37:32----Recursive ls supports --d argument before --rec:OK
+Result:PASS
+Advanced Tests:
+  12-April-2022 10:37:33----Recursive ls correctly searches files in sub-directories:OK
+Result:PASS
+Hidden - Advanced wc tests:
+  12-April-2022 10:37:33----wc on an arbritrary file:OK
+  12-April-2022 10:37:33----wc on an a file with many 0s:NOT OK Exe
+Result:FAIL
+Hidden - Advanced wc tests fast timeout 2s:
+  12-April-2022 10:37:35----wc on an a file with many 0s:NOT OK Exe
+Result:FAIL
+Hidden - Advanced ls tests:
+  12-April-2022 10:37:35----Recursive ls correctly gathers files from an arbritrary deep tree:OK
+  12-April-2022 10:37:40----Recursive ls captures multiple sub-directories:OK
+Result:PASS
+Sample echo pipes:
+  12-April-2022 10:37:45----Piping echo to echo works the same as normal echo:OK
+  12-April-2022 10:37:45----Piping echo to echo works the same as normal echo:OK
+Result:PASS
+Sample ls & cd pipes:
+  12-April-2022 10:37:45----Piping the output of ls to ls works the same as normal ls:OK
+  12-April-2022 10:37:46----Pipes involving cd do not change the current directory:OK
+Result:PASS
+Sample wc pipe:
+  12-April-2022 10:37:46----Pipe the output of ls to wc displays valid counts:OK
+  12-April-2022 10:37:46----Pipe the output of echo to wc displays valid counts:OK
+Result:PASS
+Sample cat pipes:
+  12-April-2022 10:37:46----Cat reading input from echo:OK
+  12-April-2022 10:37:47----Cat builtin supports pipes:OK
+Result:PASS
+Pipes with variables:
+  12-April-2022 10:37:47----Variable declaration in pipes is not reflected:OK
+  12-April-2022 10:37:47----Variable re-define in pipes is not reflected:OK
+Result:PASS
+Pipes Error Handling:
+  12-April-2022 10:37:48----Pipe line cannot exceed the character limit:OK
+  12-April-2022 10:37:48----A failing command does not stop the pipe chain:OK
+Result:PASS
+Pipe Edge Cases:
+  12-April-2022 10:37:48----Spaces are not required within pipes:OK
+  12-April-2022 10:37:48----Pipe to a command that does not exist reports uncrecognized error:OK
+Result:PASS
+Three Level pipes:
+  12-April-2022 10:37:49----Cat builtin supports nested pipes:OK
+  12-April-2022 10:37:49----Three-level pipe with echo, cat, and wc:OK
+Result:PASS
+Hidden - 4 level pipes:
+  12-April-2022 10:37:49----Four-level pipe with echo, cat, and wc:OK
+  12-April-2022 10:37:49----Four level pipe involving cat and wc:OK
+Result:PASS
+Bash Commands are executed correctly:
+  12-April-2022 10:37:59----Bash Builtins are fetched and do not report errors:OK
+  12-April-2022 10:38:00----Command that do not exist report errors:OK
+  12-April-2022 10:38:00----tail command works correctly:OK
+Result:PASS
+Bash Commands support pipes:
+  12-April-2022 10:38:00----tail command supports pipes:OK
+  12-April-2022 10:38:01----head command supports pipes:OK
+Result:PASS
+Sample bg runs:
+  12-April-2022 10:38:01----A simple background echo correctly completes:OK
+  12-April-2022 10:38:01----Shell can execute other commands while a background process runs:OK
+  12-April-2022 10:38:01----Shell can execute multiple background processes:OK
+Result:PASS
+Sample ps runs:
+  12-April-2022 10:38:02----ps command shows a background process:OK
+  12-April-2022 10:38:02----ps command shows multiple background processes:OK
+Result:PASS
+Background jobs finish correctly:
+  12-April-2022 10:38:02----Background process completes with a corresponding DONE message:OK
+  12-April-2022 10:38:04----Background process is DONE after terminated by a kill:OK
+Result:PASS
+bg edge cases:
+  12-April-2022 10:38:04----Background process counts reset to 1 after all processes complete:OK
+  12-April-2022 10:38:05----Background process line cannot exceed character limits:OK
+Result:PASS
+bg integrations tests:
+  12-April-2022 10:38:06----Pipes work correctly while background process runs:OK
+Result:PASS
+Shell survives a control C:
+  12-April-2022 10:38:06----A shell can survive a SIGINT signal:OK
+Result:PASS
+Sample kill runs:
+  12-April-2022 10:38:06----A shell can terminate another shell:OK
+  12-April-2022 10:38:07----A shell can terminate another shell by sending a signal:OK
+Result:PASS
+Kill error handling:
+  12-April-2022 10:38:07----kill reports an error if the pid is invalid:OK
+  12-April-2022 10:38:07----Program reports an error if the signal is invalid:OK
+Result:PASS
+Kill Integration Tests:
+  12-April-2022 10:38:07----A shell can terminate another shell while accepting variables:OK
+Result:PASS
+Hidden - correct counts for background job termination:
+  12-April-2022 10:38:12----Background jobs terminate with correct counts after kill:OK
+Result:PASS
+Hidden - correct counts for background job termination more:
+  12-April-2022 10:38:12----Background jobs terminate with correct counts after kill more {nums}:OK
+Result:PASS
+Hidden - pipes work correctly during background process:
+  12-April-2022 10:38:14----Pipes work correctly during background process:OK
+Result:PASS
+Server commands are setup correctly:
+  12-April-2022 10:38:23----Able to launch and close a server correctly:OK
+  12-April-2022 10:38:23----Server reports an error when launched without a port:OK
+  12-April-2022 10:38:24----Server shuts down after shell exits:OK
+Result:PASS
+Sample send runs:
+  12-April-2022 10:38:25----A shell can exhange a message with itself through a socket:OK
+  12-April-2022 10:38:25----Two separate shells can exhange a message:OK
+Result:PASS
+Send edge cases are handled correctly:
+  12-April-2022 10:38:25----An error when on an occupied port:OK
+  12-April-2022 10:38:26----Shell messages ignore extra spaces:OK
+  12-April-2022 10:38:26----Simple shell messages expand variables:OK
+Result:PASS
+Advanced tests:
+  12-April-2022 10:38:26----Ten separate shells can send messages:OK
+  12-April-2022 10:38:27----Pipes work while a server is running:OK
+Result:PASS
+Long client single message:
+  12-April-2022 10:38:33----A shell can exhange a message with another shell through start-client:OK
+  12-April-2022 10:38:34----A shell can exhange a message with another shell through start-client v2:OK
+Result:PASS
+Long client multiple messages:
+  12-April-2022 10:38:35----A client launched with start-client can send multiple messages:OK
+Result:PASS
+Multiple clients single message:
+  12-April-2022 10:38:36----Multiple clients single message:OK
+Result:PASS
+Hidden - Multiple clients multiple messages:
+  12-April-2022 10:38:41----Hidden - Multiple clients multiple messages:OK
+Result:PASS
+Hidden - Integration Tests:
+  12-April-2022 10:38:41----Pipe commands work through the server:OK
+Result:PASS
+12-April-2022 10:38:46--- Suites Passed 62.0/66.0
+12-April-2022 10:38:46 FINISHED
