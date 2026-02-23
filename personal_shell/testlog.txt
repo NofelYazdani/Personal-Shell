@@ -80,16 +80,16 @@ Hidden - Variables are aaaa and aaaaa:
 Result:PASS
 correct cat argument setup:
   12-April-2022 10:37:19----Cat on a file that contains one word:OK
-  12-April-2022 10:37:19----cat without a file reports an error:NOT OK
-Result:FAIL
+  12-April-2022 10:37:19----cat without a file reports an error:OK
+Result:PASS
 cat correctly reads sample files:
   12-April-2022 10:37:23----Cat on a file that contains multiple words:OK
   12-April-2022 10:37:24----Cat on a file that contains multiple lines:OK
 Result:PASS
 correct wc argument setup:
   12-April-2022 10:37:24----wc on an empty file:OK
-  12-April-2022 10:37:24----wc without a filename reports an error:NOT OK
-Result:FAIL
+  12-April-2022 10:37:24----wc without a filename reports an error:OK
+Result:PASS
 wc reports correct counts on sample files:
   12-April-2022 10:37:28----wc on a file that contains mutliple lines:OK
   12-April-2022 10:37:29----wc on a file that contains mutliple words in a line:OK
@@ -125,11 +125,11 @@ Advanced Tests:
 Result:PASS
 Hidden - Advanced wc tests:
   12-April-2022 10:37:33----wc on an arbritrary file:OK
-  12-April-2022 10:37:33----wc on an a file with many 0s:NOT OK Exe
-Result:FAIL
+  12-April-2022 10:37:33----wc on an a file with many 0s:OK Exe
+Result:PASS
 Hidden - Advanced wc tests fast timeout 2s:
-  12-April-2022 10:37:35----wc on an a file with many 0s:NOT OK Exe
-Result:FAIL
+  12-April-2022 10:37:35----wc on an a file with many 0s:OK Exe
+Result:PASS
 Hidden - Advanced ls tests:
   12-April-2022 10:37:35----Recursive ls correctly gathers files from an arbritrary deep tree:OK
   12-April-2022 10:37:40----Recursive ls captures multiple sub-directories:OK
@@ -256,5 +256,5 @@ Result:PASS
 Hidden - Integration Tests:
   12-April-2022 10:38:41----Pipe commands work through the server:OK
 Result:PASS
-12-April-2022 10:38:46--- Suites Passed 62.0/66.0
+12-April-2022 10:38:46--- Suites Passed 66.0/66.0
 12-April-2022 10:38:46 FINISHED
